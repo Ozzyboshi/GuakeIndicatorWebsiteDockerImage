@@ -17,7 +17,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 ADD default.conf /etc/nginx/conf.d/
 
 RUN wget https://github.com/Ozzyboshi/GuakeIndicatorWebsite/archive/v3.tar.gz
-RUN mkdir /guake-indicator && tar -xvzpf v2.tar.gz -C /guake-indicator/
+RUN mkdir /guake-indicator && tar -xvzpf v3.tar.gz -C /guake-indicator/
 
 EXPOSE 80
 

@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y nginx wget ca-certificates && rm -rf /v
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
-RUN rm /etc/nginx/conf.d/default.conf
+# RUN rm /etc/nginx/conf.d/default.conf
 ADD default.conf /etc/nginx/conf.d/
 
 RUN wget https://github.com/Ozzyboshi/GuakeIndicatorWebsite/archive/4.tar.gz
